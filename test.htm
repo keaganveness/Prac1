@@ -3,27 +3,141 @@
 
   <head>
     <title> GitHub Cheat Sheet </title>
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
 
     <h1> GitHub Cheat Sheet </h1>
-    <p> Below is my cheat sheet for Information Systems 354 </p>
+    <p> Keagan Veness 18540430 </p>
 
-    <h2> Configure Tooling </h2>
-    <p> Configure user information for all local repositories<p>
-    <br/>
-    <p> $ git config --global user.name "[name]"</p>
-    <p> Sets the name you want attached to your commit transactions </p>
+    <h2> CONFIGURE TOOLING </h2>
+    <p> Configure user information for all local repositories <p>
 
-    <p> $ git config --global user.email "[email address]" </p>
-    <p> Sets the email you want attached to your commit transactions </p>
+    <table>
+      <tr><th> $ git config --global user.name "[name]" </th></tr>
+      <tr><td> Sets the name you want attached to your commit transactions </td></tr>
+    </table>
 
-    <p> $ git config --global color.ui auto </p>
-    <p> Enables helpful colorization of command line output </p>
+    <table>
+      <tr><th> $ git config --global user.email "[email address]" </th></tr>
+      <tr><td> Sets the email you want attached to your commit transactions </td></tr>
+    </table>
 
-    <h2> Create Repositories </h2>
-    <p>  </p>
+    <table>
+      <tr><th> $ git config --global color.ui auto </th></tr>
+      <tr><td> Enables helpful colorization of command line output </td></tr>
+    </table>
+
+    <h2> CREATE REPOSITORIES </h2>
+    <p> Start a new repository or obtain one from an existing URL <p>
+
+    <table>
+      <tr><th> $ git init [project-name] </th></tr>
+      <tr><td> Creates a new local repository with the specified name </td></tr>
+    </table>
+
+    <table>
+      <tr><th> $ git clone [url] </th></tr>
+      <tr><td> Downloads a project and its entire version history </td></tr>
+    </table>
+
+    <h2> MAKE CHANGES </h2>
+    <p> Review edits and craft a commit transaction <p>
+
+    <table>
+      <tr><th> $ git status </th></tr>
+      <tr><td> Lists all new or modified files to be committed </td></tr>
+    </table>
+
+    <table>
+      <tr><th> $ git diff </th></tr>
+      <tr><td> Shows file differences not yet staged </td></tr>
+    </table>
+
+    <table>
+      <tr><th> $ git add [file] </th></tr>
+      <tr><td> Snapshots the file in preparation for versioning </td></tr>
+    </table>
+
+    <table>
+      <tr><th> $ git diff --staged </th></tr>
+      <tr><td> Shows file differences between staging and the last file version </td></tr>
+    </table>
+
+    <table>
+      <tr><th> $ git reset [file] </th></tr>
+      <tr><td> Unstages the file, but preserve its contents </td></tr>
+    </table>
+
+    <table>
+      <tr><th> $ git commit -m "[descriptive message]" </th></tr>
+      <tr><td> Records file snapshots permanently in version history </td></tr>
+    </table>
+
+    <h2> GROUP CHANGES </h2>
+    <p> Name a series of commits and combine completed efforts <p>
+
+    <table>
+      <tr><th> $ git branch </th></tr>
+      <tr><td> Lists all local branches in the current repository </td></tr>
+    </table>
+
+    <table>
+      <tr><th> $ git branch [branch-name] </th></tr>
+      <tr><td> Creates a new branch </td></tr>
+    </table>
+
+    <table>
+      <tr><th> $ git checkout [branch-name] </th></tr>
+      <tr><td> Switches to the specified branch and updates the working directory </td></tr>
+    </table>
+
+    <table>
+      <tr><th> $ git merge [branch] </th></tr>
+      <tr><td> Combines the specified branchs history into the current branch </td></tr>
+    </table>
+
+    <table>
+      <tr><th> $ git branch -d [branch-name] </th></tr>
+      <tr><td> Deletes the specified branch </td></tr>
+    </table>
+
+    <h2> REDO COMMITS </h2>
+    <p> Erase mistakes and craft replacement history <p>
+
+    <table>
+      <tr><th> $ git reset [commit] </th></tr>
+      <tr><td> Undoes all commits after [commit], preserving changes locally </td></tr>
+    </table>
+
+    <table>
+      <tr><th> $ git reset --hard [commit] </th></tr>
+      <tr><td> Discards all history and changes back to the specified commit </td></tr>
+    </table>
+
+    <h2> SYNCHRONIZE CHANGES </h2>
+    <p> Register a repository bookmark and exchange version history <p>
+
+    <table>
+      <tr><th> $ git fetch [bookmark] </th></tr>
+      <tr><td> Downloads all history from the repository bookmark </td></tr>
+    </table>
+
+    <table>
+      <tr><th> $ git merge [bookmark]/[branch] </th></tr>
+      <tr><td> Combines bookmarks branch into current local branch </td></tr>
+    </table>
+
+    <table>
+      <tr><th> $ git push [alias] [branch] </th></tr>
+      <tr><td> Uploads all local branch commits to GitHub </td></tr>
+    </table>
+
+    <table>
+      <tr><th> $ git pull </th></tr>
+      <tr><td> Downloads bookmark history and incorporates changes </td></tr>
+    </table>
 
   </body>
 
